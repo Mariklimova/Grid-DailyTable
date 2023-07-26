@@ -168,29 +168,60 @@ header .navigation p {
 .table {
     display: grid;
     grid-template-columns: 246px 246px 246px 246px 246px;
-    /* grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px; */
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-top: 24px;
 }
 
 .table div {
     border-bottom: 1px solid var(--gray-400, #DCDFE3);
-    padding: 16px 0;
+    padding: 16px;
+    min-height: 54px;
 }
+
 .table .title {
-    font-size: 12px;
+    font: 400 12px Noto Sans;
 }
-.table .status p {
+
+.table .status-1,
+.table .status-2,
+.table .status-3,
+.table .status-4,
+.table .status-5 {
     border-radius: 4px;
-    background: linear-gradient(0deg, rgba(130, 57, 188, 0.11) 0%, rgba(130, 57, 188, 0.11) 100%), #FFF;
     width: max-content;
-    padding: 0 2px;
-    color: var(--gray-900, #3B3E45);
-    font: 400 14px Noto Sans;
+    height: 22px;
+    padding: 2px 8px;
+    font: 400 12px Noto Sans;
     line-height: 20px;
+}
+
+.table .status-1 {
+    background: linear-gradient(0deg, rgba(18, 189, 178, 0.11) 0%, rgba(18, 189, 178, 0.11) 100%), #FFF;
+}
+
+.table .status-2 {
+    background: linear-gradient(0deg, rgba(130, 57, 188, 0.11) 0%, rgba(130, 57, 188, 0.11) 100%), #FFF;
+}
+
+.table .status-3 {
+    background: linear-gradient(0deg, rgba(84, 160, 202, 0.11) 0%, rgba(84, 160, 202, 0.11) 100%), #FFF;
+}
+
+.table .status-4 {
+    background: linear-gradient(0deg, rgba(191, 196, 198, 0.15) 0%, rgba(191, 196, 198, 0.15) 100%), #FFF;
+}
+
+.table .status-5 {
+    background: linear-gradient(0deg, rgba(251, 181, 0, 0.13) 0%, rgba(251, 181, 0, 0.13) 100%), #FFF;
 }
 
 .table div p {
     line-height: 20px;
+    color: var(--gray-900, #3B3E45);
+    font: 400 14px Noto Sans;
+}
+
+.table .actions {
+    color: var(--brand-secondary, #4155C8);
 }
