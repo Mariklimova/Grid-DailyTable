@@ -14,7 +14,7 @@ header {
 }
 
 header .logo {
-    background-image: url(./accets/Logo.svg);
+    background-image: url(./assets/Logo.svg);
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header .navigation {
 }
 
 header .navigation .ingset {
-    background-image: url(./accets/settings.svg);
+    background-image: url(./assets/settings.svg);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -42,13 +42,23 @@ header .navigation .ingset {
 
 }
 
+header .navigation .ingset:hover {
+    background-color: #000;
+    border-radius: 10px;
+}
+
 header .navigation .imgnot {
-    background-image: url(./accets/bell.svg);
+    background-image: url(./assets/bell.svg);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
     background-size: contain;
 
+}
+
+header .navigation .imgnot:hover {
+    background-color: #000;
+    border-radius: 10px;
 }
 
 header .navigation p {
@@ -81,11 +91,16 @@ header .navigation p {
 }
 
 .action .date-form .left .btn1 {
-    background-image: url(./accets/Button.svg);
+    background-image: url(./assets/Button.svg);
     width: 44px;
     height: 36px;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.action .date-form .left .btn1:active {
+    background-color: #d3d3db;
+    border-radius: 6px;
 }
 
 .action .date-form .left h3 {
@@ -96,6 +111,19 @@ header .navigation p {
 .action .date-form .left p {
     color: var(--gray-700, #666E7D);
     font: 400 14px Noto Sans;
+}
+
+.action .date-form .left .btn2 {
+    background-image: url(./assets/Button\ \(1\).svg);
+    width: 44px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.action .date-form .left .btn2:active {
+    background-color: #d3d3db;
+    border-radius: 6px;
 }
 
 .action .date-form .right {
@@ -115,6 +143,11 @@ header .navigation p {
     align-items: center;
 }
 
+.action .date-form .right .btn1:active {
+    border-color: #1660D0;
+    color: #1660D0;
+}
+
 .action .date-form .right .btn2 {
     border-radius: 4px;
     background: #1660D0;
@@ -126,12 +159,8 @@ header .navigation p {
     align-items: center;
 }
 
-.action .date-form .left .btn2 {
-    background-image: url(./accets/Button\ \(1\).svg);
-    width: 44px;
-    height: 36px;
-    background-repeat: no-repeat;
-    background-size: contain;
+.action .date-form .right .btn2:active {
+    background: #04225d;
 }
 
 .action .filter {
@@ -163,6 +192,10 @@ header .navigation p {
 .action .filter .right {
     color: var(--brand-secondary, #4155C8);
     font: 400 14px Noto Sans;
+}
+
+.action .filter .right:hover {
+    text-decoration: underline;
 }
 
 .table {
@@ -224,4 +257,8 @@ header .navigation p {
 
 .table .actions {
     color: var(--brand-secondary, #4155C8);
+}
+
+.table .actions:hover {
+    text-decoration: underline;
 }
